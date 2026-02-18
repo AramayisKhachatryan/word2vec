@@ -1,0 +1,29 @@
+model:
+  type: skipgram
+  save_name: skipgram-model
+  embedding_dim: 100
+
+training:
+  epochs: 4
+  learning_rate: 0.025
+  window_size: 2
+  num_negative_samples: 15
+
+evaluating:
+  simlex_path: data/SimLex-999.txt
+
+vocabulary:
+  min_count: 5
+  subsample_threshold: 1.0e-5
+
+data:
+  corpus_path: data/text8
+  output_dir: models/
+  checkpoint_dir: checkpoints/skipgram/
+  p: 0.25
+
+wandb:
+  enabled: true
+  project: word2vec
+  log_interval: 100
+  eval_log_interval: 100000

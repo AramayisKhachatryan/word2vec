@@ -1,0 +1,8 @@
+numpy
+tqdm
+pyyaml
+wandb
+scipy
+seaborn
+matplotlib
+scikit-learn

@@ -246,7 +246,7 @@ The table above summarizes the training hyperparameters for both models. Number 
 For both models **learning rate** is updated according to this rule:
 
 $$
-    \alpha=\max{\left \{ 10^{-5}, \ \alpha_0\cdot\frac{\# \ processed \ samples}{\# \ total \ samples}\right\}}
+\alpha = \max \left\( 10^{-5}, \alpha_0 \cdot \frac{\text{processed samples}}{\text{total samples}} \right\)
 $$
 
 where $\alpha$ is current learning rate and $\alpha_0$ is initial learning rate.

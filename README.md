@@ -1,6 +1,6 @@
 # Word2Vec from Scratch using NumPy
 
-A complete implementation of Word2Vec (Skip-gram and CBOW) using only NumPy, without relying on deep learning frameworks like PyTorch or TensorFlow.
+A complete implementation of Word2Vec (Skip-gram and CBOW) using only NumPy, without relying on deep learning frameworks like PyTorch or TensorFlow. Both our models after $90$ minutes of training achived $0.2$ Spearman's correlation score on SimLex999 dataset.
 
 > This project was developed as part of my application for the JetBrains internship program. 
 
@@ -232,7 +232,7 @@ ___
 ## Data
 For our training we have used [text8](https://www.kaggle.com/datasets/yorkyong/text8-zip) corpus, a cleaned version of [Wikipedia](https://www.wikipedia.org/) text containing the first 100MB of English Wikipedia. This text consists exclusively of lowercase letters and spaces. 
 
-Our models were trained on first 25000000 characters of the original data which is approximately equivalent to 4,250,000 words.
+Our models were trained on first 25,000,000 characters of the original data which is approximately equivalent to 4,250,000 words.
 
 ## Training
 

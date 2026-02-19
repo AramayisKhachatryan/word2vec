@@ -31,7 +31,7 @@ word2vec/
 │   ├── cbow_config.yaml 
 │   └── skipgram_config.yaml 
 │
-├── checkpoints/                     # .yaml configuration files
+├── checkpoints/                    # Saved models during training
 │   ├── cbow/                   # directory of cbow checkpoints
 │   └── skipgram/               # directory of skipgram checkpoints
 │
@@ -232,7 +232,7 @@ ___
 ## Data
 For our training we have used [text8](https://www.kaggle.com/datasets/yorkyong/text8-zip) corpus, a cleaned version of [Wikipedia](https://www.wikipedia.org/) text containing the first 100MB of English Wikipedia. This text consists exclusively of lowercase letters and spaces. 
 
-Due to computational limits our model were trained only on first 5000000 characters of the original data which is approximately equivalent to 850000 words.
+Our models were trained on first 25000000 characters of the original data which is approximately equivalent to 4,250,000 words.
 
 ## Training
 
